@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+<body>
+    hello
+<script>
+
+function test(num, callback){
+    console.log(num);
+    callback(); //보통 콜백함수실행은 마지막에 둠
+}
+test(1, function(){
+    console.log('콜백함수가 실행됩니다.')
+})
+// 구현해놓은 함수에서 콜백함수를 실행하라고 내부에서 선언해두면 인자로 함수를 내보낼 수 있음
+</script>
+</body>
+</html>
