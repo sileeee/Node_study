@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="num"></div>
+<button id="plus">증가</button>
+
+<script>
+var num = 1;
+document.addEventListener('DOMContentLoaded', function() { //문서가 로딩이 되고 난 후 콜백함수 실행
+    document.querySelector('#num').innerHTML = num; //num 변수를 해당 위치에 넣음
+});
+
+document.querySelector('#plus').addEventListener( 'click', function(){ //버튼을 클릭하면 콜백함수 실행
+    num++;
+    document.querySelector('#num').innerHTML = num;
+});
+</script>    
+</body>
+</html>
