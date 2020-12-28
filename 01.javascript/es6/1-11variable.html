@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>es6 새로운 클래스 문법</title>
+</head>
+<body>
+
+<script>
+const a = 10;
+// a = 20; 상수여서 재지정 불가능
+
+
+
+let b = 1 //block 변수(지역변수)
+if (true) {
+    let b = 2;
+    console.log(b); // 출력 : 2
+}
+console.log(b);  // 출력 : 1
+//var로 정의하는 경우, 둘 다 2출력
+
+
+
+// template 변수
+const arr = "hello";
+console.log(`안녕 ${arr}`); //''이 아니라 ``
+
+
+
+// const func1 = function(a,b){
+//     return a+b;
+// }
+
+// arrow function( + 현재 객체(this)를 바인드해줌)
+const func1 = (a,b) => a+b //키워드 없앰, 축약
+
+console.log(func1(1,2));
+
+
+
+const [d,e,f] = [1, 2, 3];
+console.log(d, e, f);
+
+
+
+const arr1 = [1,2];
+const arr2 = [3,4,5];
+const arr3 = [...arr1, ...arr2]; //spread연산자 ( 괄호 없애고 두 배열을 연결 )
+
+console.log(arr3) //[1, 2, 3, 4, 5]
+//-> 인자를 가변적으로 받을 때 유용
+
+function abc(a, ...b){
+    console.log(arguments[0]) //nodejs출력 //arguments[1]은 hello, [2]는 1
+    //인자가 b[0]이면 hello, b[1]이면 1
+}
+abc('nodejs','hello',1); //인자를 가변적으로 받음
+
+</script>    
+</body>
+</html>
