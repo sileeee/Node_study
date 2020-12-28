@@ -1,0 +1,34 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery 연습</title>
+</head>
+<body>
+
+<script>
+var $ = function(selector){ // function $(selector){과 동일
+
+    var click = function(callback){ //click 함수 - 인자로 받은 콜백을 내부적으로 실행
+        callback();
+    }
+
+    return {
+        click : click //click을 할당 받는 것임
+    };
+    
+}
+
+
+$('#abc').click(function(){
+    console.log('hello')
+})
+
+
+</script>
+    
+</body>
+</html>
