@@ -1,0 +1,24 @@
+{
+  "name": "Node_WebProgramming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sileeee/Node_WebProgramming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sileeee/Node_WebProgramming/issues"
+  },
+  "homepage": "https://github.com/sileeee/Node_WebProgramming#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid4": "^2.0.2"
+  }
+}
