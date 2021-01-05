@@ -5,11 +5,11 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
-    "uuid4": "^2.0.2"
+    "nunjucks": "^3.2.2"
   },
   "devDependencies": {},
   "scripts": {
-    "start" : "npx nodemon app.js"
+    "start": "npx nodemon -e js,html app.js"
   },
   "keywords": [],
   "author": "",
