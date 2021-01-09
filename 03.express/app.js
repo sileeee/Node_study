@@ -25,6 +25,7 @@ app.use('/uploads', express.static('uploads'));
 // 템플릿 변수
 app.use( (req, res, next) => {
     app.locals.isLogin = true;
+    app.locals.req_path = req.path;
     next();
 });
 
