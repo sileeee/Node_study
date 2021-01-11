@@ -24,13 +24,13 @@ fs.readdirSync(__dirname)
     .filter(file => {
         return file.indexOf('.js')&& file !== 'index.js'
     })
-    .forEach(file => {
+    .forEach(file => { //sync맞추어 테이블 생성해줌
         var model = sequelize.import(path.join(__dirname,
             file));
             db[model.name] = model;
     });
 
-Object.keys(db).forEach(modelName => {
+Object.keys(db).forEach(modelName => { //외부키 설정
     if("associate" in db[modelName]){
         db[modelName].associate(db);
     }
