@@ -30,3 +30,12 @@ aa.then(() =>{
 // wait1seconds.then(() =>{
 //     console.log("찍고난후");
 // });
+
+// const aa = new Promise(
+//     (resolve, reject) => {
+//         reject(console.log("error!!!")); //이런식으로 reject는 에러를 처리할 수 있음
+//     });
+
+// aa.then(() =>{
+//     console.log("프라미스 실행 완료");
+// });
