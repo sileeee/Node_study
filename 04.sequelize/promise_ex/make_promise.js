@@ -7,6 +7,8 @@ aa.then(() =>{
     console.log("프라미스 실행 완료");
 });
 
+
+
 // const aa = new Promise(
 //     (resolve, reject) => {
 //         resolve("프라미스123");
@@ -27,6 +29,8 @@ aa.then(() =>{
 //     }
 // );
 
+
+
 // wait1seconds.then(() =>{
 //     console.log("찍고난후");
 // });
@@ -39,3 +43,17 @@ aa.then(() =>{
 // aa.then(() =>{
 //     console.log("프라미스 실행 완료");
 // });
+
+
+
+// const wait1seconds = new Promise(
+//     (resolve, reject) => {
+//         reject('errer!!');
+//     }
+// );
+
+// wait1seconds.then(() =>{
+//     console.log("프라미스 이행완료");
+// }).catch( (err) =>{
+//     console.log(err);
+// })
