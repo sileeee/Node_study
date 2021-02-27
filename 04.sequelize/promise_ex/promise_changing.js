@@ -14,6 +14,8 @@ const p2 = new Promise(
         setTimeout(
             () => {
                 resolve({ p2_text : "p2의 텍스트" });
+                //reject로 에러 처리하고 싶으면 
+                //reject("error error")
             }, 3000 );
     }
 );
@@ -28,4 +30,7 @@ p1.then( result1 => {
 Promise.all([ p1,p2 ]).then((result)=>{
     console.log("p1 = " + result[0].p1_text);
     console.log("p2 = " + result[1].p2_text);
-})
+// }).catch(err => {
+//     console.log(err); 로 에러처리 가능
+
+});
