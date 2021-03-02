@@ -11,8 +11,10 @@ const modi_description = "update_" + Math.random().toString(36).substring(2, 15)
 async function run (){
 
     // 브라우저 열기
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();  
+    const browser = await puppeteer.launch({
+        // headless : false
+    });
+    const page = await browser.newPage();  //하나의 탭
     
 
     // 웹사이트 로딩
