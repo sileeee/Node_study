@@ -16,6 +16,9 @@ async function run (){
     });
     const page = await browser.newPage();  //하나의 탭
     
+    // page.on("dialog", (dialog) => {
+    //     dialog.accept();
+    // });
 
     // 웹사이트 로딩
     await page.goto('http://localhost:3000/', {timeout: 0, waitUntil: 'domcontentloaded'});
