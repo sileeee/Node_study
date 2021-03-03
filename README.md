@@ -6,3 +6,4 @@
 ### 04 Sequelize
 ### 05 Promise
 ### 06 Crawling
+### 07 GraphQL
